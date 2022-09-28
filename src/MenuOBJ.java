@@ -1,4 +1,4 @@
-class MenuOBJ
+class MenuOBJ extends Exception
 {
 	public String name;
 	public int menu_value;

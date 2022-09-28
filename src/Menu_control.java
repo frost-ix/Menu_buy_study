@@ -29,7 +29,7 @@ public class Menu_control
 		System.out.println("Number | Menu      | Coast");
 		for (int i = 0; i < menu_in.length; i++)
 		{
-			System.out.print(i+"       "+menu_in[i].getMenuName()+"        "+menu_in[i].getMenuValue());
+			System.out.println(i+"       "+menu_in[i].getMenuName()+"        "+menu_in[i].getMenuValue());
 		}
 		System.out.println();
 	}
