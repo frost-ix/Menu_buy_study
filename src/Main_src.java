@@ -17,24 +17,34 @@ public class Main_src
         Menu_control.getAllMenu();
         while (true)
         {
-            // Select string is choose buy or out.
-            // When other string is incoming, Retry input string
-            System.out.print("Select module >> "); String select = input_sc.nextLine();
-            if (select.equals("buy"))
+            if (guest_data.getGuest_wallet_coast()!=0)
             {
-                System.out.println("Now wallet coast : "+guest_data.getGuest_wallet_coast());
-                guest_data.setGuest_wallet_coast(Menu_control.calCoast(guest_data.getGuest_wallet_coast()));
-                System.out.println("After wallet coast : "+guest_data.getGuest_wallet_coast());
-            }
-            else if(select.equals("out"))
-            {
-                System.out.println("Out this market");
-                System.exit(0);
+                // Select string is choose buy or out.
+                // When other string is incoming, Retry input string
+                System.out.print("Select module >> "); String select = input_sc.nextLine();
+                if (select.equals("buy"))
+                {
+                    System.out.println("Now wallet coast : "+guest_data.getGuest_wallet_coast());
+                    guest_data.setGuest_wallet_coast(Menu_control.calCoast(guest_data.getGuest_wallet_coast()));
+                    System.out.println("After wallet coast : "+guest_data.getGuest_wallet_coast());
+                }
+                else if(select.equals("out"))
+                {
+                    System.out.println("Out this market");
+                    System.exit(0);
+                }
+                else
+                {
+                    System.out.println("No command this program, retry");
+                }
             }
             else
             {
-                System.out.println("No command this program, retry");
+                System.out.println("GUEST : NO COAST IN WALLET");
+                System.out.println("Out this market");
+                System.exit(0);
             }
+            
         }
     }
     public static void introduceProgram()

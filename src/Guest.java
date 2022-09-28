@@ -2,12 +2,17 @@ class Guest
 {
 	private String guest_name;
 	private int guest_wallet_coast;
-	
+
+	public Guest()
+	{
+		this("no guest", 0);
+	}
 	public Guest(String _name, int wallet_coast)
 	{
 		this.guest_name = _name;
 		this.guest_wallet_coast = wallet_coast;
 	}
+	
 	public String getGuset_name()
 	{
 		return this.guest_name;
