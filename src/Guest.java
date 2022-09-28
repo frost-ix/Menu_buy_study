@@ -1,4 +1,4 @@
-class Guest
+class Guest extends Exception
 {
 	private String guest_name;
 	private int guest_wallet_coast;
