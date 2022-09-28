@@ -16,6 +16,7 @@ public class Main_src
         System.out.print("Guest Name : "); guest_data = new Guest(input_sc.next());
         System.out.print("Guest Waller Coast : "); guest_data = new Guest(guest_data.getGuset_name(), input_sc.nextInt());
         input_sc.nextLine();
+        
         // Push empty string
         Menu_control.getAllMenu();
         while (true)
