@@ -14,7 +14,7 @@ public class Main_src
         // Guset_data Object >> Name & Coast
         System.out.println("<Input Guest Data>");
         System.out.print("Guest Name : "); guest_data = new Guest(input_sc.next());
-        System.out.print("Guest Waller Coast : "); guest_data = new Guest(guest_data.getGuset_name(), input_sc.nextInt());
+        System.out.print("Guest Wallet Coast : "); guest_data = new Guest(guest_data.getGuset_name(), input_sc.nextInt());
         input_sc.nextLine();
         
         // Push empty string
