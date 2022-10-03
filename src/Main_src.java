@@ -37,6 +37,10 @@ public class Main_src
                     System.out.println("Out this market");
                     System.exit(0);
                 }
+                else if(select.equals("re"))
+                {
+                    Main_src.main(args);
+                }
                 else
                 {
                     System.out.println("No command this program, retry");
